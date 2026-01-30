@@ -1,0 +1,49 @@
+
+
+.btn{
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    &__primary {
+        &-solid {
+            background-color: $primary-color;
+            color: $primary-light-color;
+            &:hover{
+                background-color:$secondary-dark-color ;
+                color:$light-font-color ;
+            }
+        }
+        &-outline {
+            background-color: transparent;
+            color: $primary-light-color;
+            border: 1px solid $primary-light-color;
+            &:hover{
+                background-color: $secondary-dark-color;
+                color: $light-font-color;
+            }
+        }
+    };
+    &__secondary {
+        &-solid{
+            background-color: $secondary-color;
+            color: $secondary-light-color;
+             &:hover{
+                background-color: $secondary-dark-color;
+                color: $light-font-color;
+            }
+        }
+            &-outline {
+                background-color:transparent;
+                color: $secondary-light-color;
+                border: 1px solid $secondary-light-color;
+                 &:hover{
+                background-color: $secondary-dark-color;
+                color: $light-font-color;
+            }
+            }
+    }
+}
+ .content__container .btn{
+     display: flex;
+    // justify-content: space-between;
+}

@@ -1,0 +1,29 @@
+
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    padding : 0.5rem;
+    background-color: $dark-font-color;
+    color: $light-font-color;
+    position:relative;
+    bottom: - $footer-height;
+    width: 100%;
+
+}
+.section-links {
+gap: 1rem;
+}
+.section-links a{
+text-decoration: none;
+gap: 1rem;
+}
+@media (max-width:600px) {
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.75rem;
+        gap: 1rem;
+    }
+    
+}   
