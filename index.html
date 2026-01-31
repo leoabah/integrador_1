@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles/main.css">
 </head>
+
 <body>
-    <header class="header__container">
-      <nav class="navbar">
-        <div class="logo-mutual" style="display: flex; gap:0.5rspan;">
-        <img  class="logo-img"  src="./assets/logo.png" width="60" height="60" >
+  <header class="header__container">
+    <nav class="navbar">
+      <div class="logo-mutual" style="display: flex; gap:0.5rspan;">
+        <img class="logo-img" src="./assets/logo.png" width="60" height="60">
         <h3>Jugueteria<br>Cosmica</h3>
       </div>
       <button class="burger" id="burGer" aria-label="toggle-menu">
@@ -18,23 +20,23 @@
         <span class="bar"></span>
         <span class="bar"></span>
       </button>
-    </div>
-    <div class="burger-container" id ="burgerContainer">
+      </div>
+      <div class="burger-container" id="burgerContainer">
         <ul class="ul-navbar" id="ulnavBar">
-          <li><a class="A-nav" href="#">Home</a></li>
-          <li><a class="A-nav" href="#">Altas</a>
-          <li><a class="A-nav" href="#">Contactos</a></li>
-          <li><a class="A-nav" href="#">Nosotros</a>
+          <li><a class="A-nav" href="index.html">Home</a></li>
+          <li><a class="A-nav" href="./styles/pages/alta.html">Altas</a>
+          <li><a class="A-nav" href="./styles/pages/contactos.html">Contactos</a></li>
+          <li><a class="A-nav" href="./styles/pages/nosotros.html">Nosotros</a>
         </ul>
-        <form  class="form-H" action="/buscar" method="get">
-            <input type="text" name="query" placeholder="Buscar..." >
-             <button class="btn-nav"  type="submit">
-                 <img src="./assets/lupa.png" width="30" height="30" >
-             </button>
+        <form class="form-Header" action="/buscar" method="get">
+          <input type="text" name="query" placeholder="Buscar...">
+          <button class="btn-nav" type="submit">
+            <img src="./assets/lupa.png" width="30" height="30">
+          </button>
         </form>
         <div class="btn-nav">
           <button class="btn btn__primary-solid">
-           <a class="A-nav" href="/styles/pages/inciarSesion.html" id="iniciarSesion"  target="_blank">Iniciar</a>
+            <a class="A-nav" href="/styles/pages/inciarSesion.html" id="iniciarSesion" target="_blank">Iniciar</a>
           </button>
           <button class="btn btn__secondary-solid">
             <a class="A-nav" href="/styles/pages/Asociarme.html" id="Registrarse" target="_blank">Registrarse</a>
@@ -45,147 +47,157 @@
           <button class="btn btn__secondary-outline"><a  class="A-nav" href="/styles/pages/Asociarme.html" id="Registrarse" target="_blank">Registrarse</a>
           </button> -->
         </div>
-        </div>
-      </nav> 
-    </header>
-    <main class="layout-container">
-      <div class="slider-container">
-        <div class="slider-track">
+      </div>
+    </nav>
+  </header>
+  <main class="layout-container">
+    <div class="slider-container">
+      <div class="slider-track">
         <img src="./assets/descuentoBanner.png" alt="Slide 1">
         <img src="./assets/banner_desc.png" alt="Slide 2">
         <img src="./assets/banner_novedad.png" alt="Slide 3">
         <img src="./assets/descuentoBanner.png" alt="Slide 1 copia">
-        </div>
-      </div>
-
-  <div class="section-card">
-
-    <div class="card">
-        <img src="./assets/Naruto.png" alt="Imagen 1">
-      <div class="card-description">
-        <p>🚀 Naruto Tome 1</p>
-        <span> a compaña a "Naruto"  en su lucha por convertirse en el Hokage
-        </span>
-        <br>
-        <p>$11500</p>
-        <br>
-        <button class=" btn btn__primary-solid">comprar</button>
       </div>
     </div>
 
-      <div class="card">
-        <img src="./assets/one_peace.png" alt="Imagen 2">
-      <div class="card-description">
-        <p>🏴‍☠️ One Piece Tome 1</p>
-        <span> a compaña a "Luffy" y su tripulacion en busca del tesoro legendario "One Piece"
-         </span>
-         <br>
-         <p>$14890</p>
-         <br>
-        <button class="btn btn__primary-solid">comprar</button>
-      </div>
+    <div class="section-card">
+
+      <div class="card" data-category="freindLy">
+        <span class="category">amistad</span>
+        <img src="./assets/Naruto.png" alt="Imagen 1">
+        <div class="card-description">
+          <p>🚀 Naruto Tome 1</p>
+          <span> a compaña a "Naruto" en su lucha por convertirse en el Hokage
+          </span>
+          <br>
+          <p>$11500</p>
+          <br>
+          <button class=" btn btn__primary-solid">comprar</button>
+        </div>
       </div>
 
-      <div class="card">
+      <div class="card" data-category="freindLy">
+        <span class="category">amistad</span>
+        <img src="./assets/one_peace.png" alt="Imagen 2">
+        <div class="card-description">
+          <p>🏴‍☠️ One Piece Tome 1</p>
+          <span> a compaña a "Luffy" y su tripulacion en busca del tesoro legendario "One Piece"
+          </span>
+          <br>
+          <p>$14890</p>
+          <br>
+          <button class="btn btn__primary-solid">comprar</button>
+        </div>
+      </div>
+
+      <div class="card" data-category="shoNen">
+        <span class="category">shonen</span>
         <img src="./assets/Dragon_ball.png" alt="Imagen 3">
         <div class="card-description">
-        <p>🐉 Dragon Ball Tome 1</p>
-        <span> a compaña a "goku" y compania en nuevas aventuras protegiendo la Tierra contra
-          nuevas amenazas
-        </span>
-        <br>
-        <p>$18500</p>
-        <br>
-        <button class="btn btn__primary-solid"  >comprar</button>
-      </div>
+          <p>🐉 Dragon Ball Tome 1</p>
+          <span> a compaña a "goku" y compania en nuevas aventuras protegiendo la Tierra contra
+            nuevas amenazas
+          </span>
+          <br>
+          <p>$18500</p>
+          <br>
+          <button class="btn btn__primary-solid">comprar</button>
+        </div>
       </div>
 
-      <div class="card">
+      <div class="card" data-category="shoNen">
+        <span class="category">shonen</span>
         <img src="./assets/Ataque_titanes.png" alt="Imagen 4">
         <div class="card-description">
-        <p>⚔️ Ataque a los Titanes Tome 1</p>
-        <span> acompaña a "Eren" en su lucha contra los titanes y su deseo de vengarse</span>
-        <br>
-        <p>$15700</p>
-        <br>
-        <button class="btn btn__primary-solid"  >comprar</button>
-      </div>
+          <p>⚔️ Ataque a los Titanes Tome 1</p>
+          <span> acompaña a "Eren" en su lucha contra los titanes y su deseo de vengarse</span>
+          <br>
+          <p>$15700</p>
+          <br>
+          <button class="btn btn__primary-solid">comprar</button>
+        </div>
       </div>
 
-      <div class="card">
+      <div class="card" data-category="deMons">
+        <span class="category">demonios</span>
         <img src="./assets/demons_slayers.png" alt="Imagen 5">
         <div class="card-description">
-        <p>👹 demons_slayers  Tome 1</p>
-        <span> acompaña a "Tanjiro" en su viaje para salvar a su hermana "Nezuko"
-          y luchar contra los demonios </span>
-        <br>
-        <p>$16500</p>
-        <br>
-        <button class="btn btn__primary-solid"  >comprar</button>
-      </div>
+          <p>👹 demons_slayers Tome 1</p>
+          <span> acompaña a "Tanjiro" en su viaje para salvar a su hermana "Nezuko"
+            y luchar contra los demonios </span>
+          <br>
+          <p>$16500</p>
+          <br>
+          <button class="btn btn__primary-solid">comprar</button>
+        </div>
       </div>
 
-      <div class="card">
+      <div class="card" data-category="deMons">
+        <span class="category">demonios</span>
         <img src="./assets/berseker.png" alt="Imagen 6">
         <div class="card-description">
-        <p>⚔️ berseker tome 1</p>
-        <span> acompaña a "Guts" en su lucha contra su destino marcado por "Griffith"
-          y la banda del halcon. </span>
-        <br>
-        <p>$14200</p>
-        <br>
-        <button class="btn btn__primary-solid" id="payProd">comprar</button>
+          <p>⚔️ berseker tome 1</p>
+          <span> acompaña a "Guts" en su lucha contra su destino marcado por "Griffith"
+            y la banda del halcon. </span>
+          <br>
+          <p>$14200</p>
+          <br>
+          <button class="btn btn__primary-solid" id="payProd">comprar</button>
         </div>
       </div>
 
-      <div class="card">
+      <div class="card" data-category="deMons">
+        <span class="category">demonios</span>
         <img src="./assets/death_Notes.png" alt="Imagen 7">
         <div class=" card-description">
-        <p>🖋 Death Note Tome 1</p>
-        <span> acompaña a "Light Yagami" en su mision<br> de limpiar el mundo del mal
-          con<br> la ayuda de "Ryuk" un shinigami </span>
+          <p>🖋 Death Note Tome 1</p>
+          <span> acompaña a "Light Yagami" en su mision<br> de limpiar el mundo del mal
+            con<br> la ayuda de "Ryuk" un shinigami </span>
           <br>
-        <p>$15700</p>
-        <br>
-        <button class="btn btn__primary-solid" id="payProd">comprar</button>
+          <p>$15700</p>
+          <br>
+          <button class="btn btn__primary-solid" id="payProd">comprar</button>
         </div>
       </div>
 
-      <div class="card">
+      <div class="card" data-category="freindLy">
+        <span class="category">amistad</span>
         <img src="./assets/hunters_x_hunters.png" alt="Imagen 8">
         <div class=" card-description">
-        <p>🎯 Hunter x Hunter Tome 1</p>
-        <span> acompaña a "Gon Freecss"  y "kilua Zoldic"
-          en sus aventuras para convertirse en cazadores
-          y encontrar a "Ging Freecss"  </span>
-        <br>
-        <p>$12900</p>
-        <br>
-        <button class="btn btn__primary-solid" id="payProd">comprar</button>
+          <p>🎯 Hunter x Hunter Tome 1</p>
+          <span> acompaña a "Gon Freecss" y "kilua Zoldic"
+            en sus aventuras para convertirse en cazadores
+            y encontrar a "Ging Freecss" </span>
+          <br>
+          <p>$12900</p>
+          <br>
+          <button class="btn btn__primary-solid" id="payProd">comprar</button>
         </div>
       </div>
 
-      <div class="card">
+      <div class="card" data-category="shoNen">
+        <span class="category">shonen</span>
         <img src="./assets/jujutsu_Kaisen.png" alt="Imagen 9">
         <div class=" card-description">
-        <p>🌀 Jujutsu Kaisen Tome 1</p>
-        <span> sumate al coloegio de Hechiceria para conocer a
-           "jugi Itadori" nuestro prota
-          y junta a "nobara", "maki",
-          "panda"y el profe "gojo" y compania </span>
-        <br>        
-        <p>$17500</p>
-        <br>
-        <button class="btn btn__primary-solid" id="payProd">comprar</button>
+          <p>🌀 Jujutsu Kaisen Tome 1</p>
+          <span> sumate al coloegio de Hechiceria para conocer a
+            "jugi Itadori" nuestro prota
+            y junta a "nobara", "maki",
+            "panda"y el profe "gojo" y compania </span>
+          <br>
+          <p>$17500</p>
+          <br>
+          <button class="btn btn__primary-solid" id="payProd">comprar</button>
         </div>
       </div>
 
-      <div class="card">
+      <div class="card" data-category="freindLy">
+        <span class="category">amistad</span>
         <img src="./assets/Heroes_academy.png" alt="Imagen 10">
         <div class=" card-description">
           <p>🦸‍♂️ My Hero Academy Tome 1</p>
           <span> acompaña a "Izuku Midoriya" en su aventura para convertirse en
-             el mejor heroe y heredero
+            el mejor heroe y heredero
             del gran "All Might"
           </span>
           <br>
@@ -196,37 +208,38 @@
       </div>
 
     </div>
-    </main>
-    <footer>
-      <div class="footer-container">
-        <div class="section-contact">
-          <h4><span>Jugueteria Cosmica</span></h4>
-          <p> Atencion: Lun a Vier de 9 hs  a 18 hs.
-                <br>        
-                📍AV.9 de julio Nº1024, CABA, Argentina
-                <br>
-               📲 WhatsApp: +549221-431-9350
-                <br>
-                ☎️ Llamanos:+ 549221-453-9775
-                <br>
-                📧 spanail: lamutuallibertad@hotmail.com
-          </p>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="section--contact">
+        <h4><span>Jugueteria Cosmica</span></h4>
+        <p> Atencion: Lun a Vier de 9 hs a 18 hs.
+          <br>
+          📍AV.9 de julio Nº1024, CABA, Argentina
+          <br>
+          📲 WhatsApp: +549221-431-9350
+          <br>
+          ☎️ Llamanos:+ 549221-453-9775
+          <br>
+          📧 spanail: lamutuallibertad@hotmail.com
+        </p>
+      </div>
+      <div class="section-links">
+        <h4><span>Links sociales</span></h4>
+        <div>
+          <a href="#" target="_blank" class="twitter-logo">
+            <img src="./assets/icons8-twitter-50.png">
+          </a>
+          <a href="#" target="_blank" class="facebook-logo">
+            <img src="./assets/icons8-facebook-50.png">
+          </a>
+          <a href="#" target="_blank" class="instagram-logo">
+            <img src="./assets/icons8-instagram-50.png">
+          </a>
         </div>
-        <div class="section-links">
-          <h4><span>Links sociales</span></h4>
-       <div>
-        <a href="#" target="_blank" class="twitter-logo">
-            <img src="./assets/icons8-twitter-50.png"> 
-        </a>
-        <a href="#" target="_blank" class="facebook-logo">
-          <img src="./assets/icons8-facebook-50.png">
-        </a>
-        <a href="#" target="_blank" class="instagram-logo" > 
-          <img src="./assets/icons8-instagram-50.png">
-        </a>
-      </div>   
         <p>&copy; 2026 Jugueteria Cosmica. All rights reserved.</p>
-    </footer>
-    <script src="scripts.js"></script>
+  </footer>
+  <script src="scripts.js"></script>
 </body>
+
 </html>

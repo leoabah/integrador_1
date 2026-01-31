@@ -60,7 +60,7 @@
 
     &:hover {
         background-color: $secondary-color;
-    }    
+    }
 }
 
 .card-description {
@@ -88,92 +88,6 @@
     height: 24px;
     
 }
-
-.form-altas{
-    //height: 100%; 
-    border-radius: 8px;    
-    //border: 2px solid $light-font-color;
-    background-color: $primary-dark-color;
-    margin: 3rem 14rem ;
-    padding: 0.5rem;
-    width: 1065px;   
-    justify-self:center;
-
-}
-.Formhead{
-    display: flex;
-    background-color: $primary-dark-color;
-    border: 2px solid whitesmoke;
-    border-radius: 1rem; 
-    gap: 1.5rem;
-}
-.Formhead img{
-    position: relative;
-    height: 630px;
-    width: 540px;
-    border-radius: 8px;
-}
-.formingres{
-    position:relative;
-    width: 500px;
-    //border: 1px solid;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    //justify-content: space-around;
-    padding: 0.25rem;
-    padding-bottom: 0;
-    gap: 0.25rem;
-}
-
-
-.formIngres{
-    //height: 100%; 
-    border-radius: 8px;    
-    border: 2px solid $light-font-color;
-    background-color: $primary-dark-color;
-    margin: 3rem 14rem ;
-    padding: 0.5rem;
-    width: 1025px; 
-    height: 470px; 
-    justify-self:center;
-}
-.form-H{
-    display: flex;
-    background-color: $primary-dark-color;
-    //border: 2px solid whitesmoke;
-    border-radius: 1rem; 
-    gap: 1.5rem;
-    align-items: start;
-}
-.form-H img{
-    position: relative;
-    height: 450px;
-    width: 500px;
-    border-radius: 8px;
-}
-.formIng{
-    position:relative;
-    width: 500px;
-    //border: 1px solid;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    //justify-content: space-around;
-    padding: 0.25rem;
-    padding-bottom: 0;
-    gap:1.25rem;
-}
-input[type="text"], input[type="password"], input[type="email"], input[type="number"] {
-    width: 80%;
-    padding: 0.5rem;
-    border: 1px solid $light-font-color;
-    border-radius: 4px;
-    background-color: $secondary-dark-color;
-    color: $light-font-color;
-}
-
-
 @media (max-width: 768px ) {
 
     .layout-container{

@@ -61,7 +61,7 @@
     padding:1rem;   
 }
 
- .form-H{
+ .form-Header{
     display: flex;
     background-color: $primary-dark-color;
     border-radius: 1rem; 
@@ -69,7 +69,7 @@
     align-items: center;
  }
 
- .form-H button{
+ .form-Header button{
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -115,9 +115,19 @@
     .header__container{
         height:$header-height-m-t ;
     }
-
+    .logo-img{
+    background-color: $primary-light-color;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    }
     .burger {
         display: flex;
+        background-color: #5b4234;
+        border-radius: 5px;
+        padding: 9px;
+        width: 50px;
+        align-items: center;
 
     }
    .burger-container{
@@ -129,12 +139,18 @@
     position: absolute;
     width: 240px;
     height: 450px;
-    top: 70px;
+    top: 80px;
     right:0;
-    background-color: $primary-dark-color;
+    background-color: $secondary-color;
 }
     .burger-container li:hover {
         background-color: $primary-color;
+        display: flex;
+        flex-direction: column;
+        width: inherit;
+        align-items: center;
+        border-radius: 8px;
+        
     }
 
     .burger-container.active{

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body>
+    <div class="form-altas" id="formAtlas">
+        <div class="Formhead">
+            <img class="img-a" src="/assets/imgALtas.png">
+            <!-- <hr>  -->
+            <form class="formingres" action="/submit-sing-in" method="post" id="ProductForm">
+                <h1>Altas de Productos</h1>
+                <label for="username">Apellido y nombre:</label>
+                <input type="text" id="username" name="username" required><br>
+                <label for="dni">Precio:</label>
+                <input type="text" id="Dni" name="dni" required><br>
+                <label for="phone">Telefono:</label>
+                <input type="number" id="phone" name="phone"><br>
+                <label for="address">Direccion:</label>
+                <input type="text" id="address" name="address" required><br>
+                <label for="email">Correo:</label>
+                <input type="text" id="email" name="email" required><br>
+
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required(8 caracteres minimo)><br><br>
+
+                <button class="btn btn__secondary-solid" type="submit">
+                    <a href="/styles/pages/inciarSesion.html"
+                        style="text-decoration: none;color: whitesmoke;">Registrase</a></button>
+                <button class="btn btn__primary-solid" type="submit">
+                    <a href="/styles/pages/inciarSesion.html"
+                        style="text-decoration: none;color: whitesmoke;">Iniciar</a></button>
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -132,7 +132,7 @@ h1, h2, h3, h4, p, span, div {
   padding: 1rem;
 }
 
-.form-H {
+.form-Header {
   display: flex;
   background-color: #d80608;
   border-radius: 1rem;
@@ -140,7 +140,7 @@ h1, h2, h3, h4, p, span, div {
   align-items: center;
 }
 
-.form-H button {
+.form-Header button {
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -184,10 +184,21 @@ h1, h2, h3, h4, p, span, div {
 /* Diseño para móviles */
 @media (max-width: 768px) {
   .header__container {
-    height: 80px;
+    height: 60px;
+  }
+  .logo-img {
+    background-color: #f8e18c;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
   }
   .burger {
     display: flex;
+    background-color: #5b4234;
+    border-radius: 5px;
+    padding: 9px;
+    width: 50px;
+    align-items: center;
   }
   .burger-container {
     align-items: center;
@@ -197,12 +208,17 @@ h1, h2, h3, h4, p, span, div {
     position: absolute;
     width: 240px;
     height: 450px;
-    top: 70px;
+    top: 80px;
     right: 0;
-    background-color: #d80608;
+    background-color: #5b4234;
   }
   .burger-container li:hover {
     background-color: #3e607a;
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    align-items: center;
+    border-radius: 8px;
   }
   .burger-container.active {
     display: flex;
@@ -295,7 +311,7 @@ h1, h2, h3, h4, p, span, div {
   max-width: 298px;
 }
 .card:hover {
-  background-color: #3e607a;
+  background-color: #5b4234;
 }
 
 .card-description {
@@ -323,6 +339,92 @@ h1, h2, h3, h4, p, span, div {
   height: 24px;
 }
 
+.form-altas {
+  border-radius: 8px;
+  background-color: #d80608;
+  margin: 3rem 14rem;
+  padding: 0.5rem;
+  width: 1065px;
+  justify-self: center;
+}
+
+.Formhead {
+  display: flex;
+  background-color: #d80608;
+  border: 2px solid whitesmoke;
+  border-radius: 1rem;
+  gap: 1.5rem;
+}
+
+.Formhead img {
+  position: relative;
+  height: 630px;
+  width: 540px;
+  border-radius: 8px;
+}
+
+.formingres {
+  position: relative;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.25rem;
+  padding-bottom: 0;
+  gap: 0.25rem;
+}
+
+.formIngres {
+  border-radius: 8px;
+  border: 2px solid #f8f6e7;
+  background-color: #d80608;
+  margin: 3rem 14rem;
+  padding: 0.5rem;
+  width: 1025px;
+  height: 470px;
+  justify-self: center;
+}
+
+.form-H {
+  display: flex;
+  background-color: #d80608;
+  border-radius: 1rem;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.form-H img {
+  position: relative;
+  height: 450px;
+  width: 500px;
+  border-radius: 8px;
+}
+
+.formIng {
+  position: relative;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.25rem;
+  padding-bottom: 0;
+  gap: 1.25rem;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=number] {
+  width: 80%;
+  padding: 0.5rem;
+  border: 1px solid #f8f6e7;
+  border-radius: 4px;
+  background-color: #180e1c;
+  color: #f8f6e7;
+}
+
+@media (max-width: 768px) {
+  .layout-container {
+    margin-top: 60px;
+  }
+}
 .footer-container {
   display: flex;
   justify-content: space-around;
