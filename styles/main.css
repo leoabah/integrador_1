@@ -181,6 +181,20 @@ h1, h2, h3, h4, p, span, div {
   transition: 0.4s;
 }
 
+.btn {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+.btn__primary-solid {
+  background-color: #3e607a;
+  color: #f8e18c;
+}
+.btn__primary-solid:hover {
+  background-color: #180e1c;
+  color: #f8f6e7;
+}
+
 /* Diseño para móviles */
 @media (max-width: 768px) {
   .header__container {
@@ -253,34 +267,43 @@ h1, h2, h3, h4, p, span, div {
 }
 
 .slider-container {
+  display: flex;
+  align-items: center;
   width: 100%;
   overflow: hidden;
   position: relative;
-  border: 1px solid white;
+  background-color: #180e1c;
+}
+
+.viewport {
+  width: 100%;
+  overflow: hidden;
 }
 
 .slider-track {
   display: flex;
-  width: 300%;
-  /* Utilisation de 'ease-in-out' pour plus de douceur */
+  width: 400%;
   animation: slideAnimation 12s infinite ease-in-out;
 }
 
 .slider-track img {
-  width: 33.333%;
+  width: 25%; /* 100 / 4 */
   -o-object-fit: cover;
-     object-fit: cover; /* Évite de déformer vos images */
+     object-fit: cover;
 }
 
 @keyframes slideAnimation {
-  0%, 25% {
+  0%, 20% {
     transform: translateX(0);
   }
-  33%, 58% {
-    transform: translateX(-33.333%);
-  } /* Correction du %% */
-  66%, 91% {
-    transform: translateX(-66.666%);
+  25%, 45% {
+    transform: translateX(-25%);
+  }
+  50%, 70% {
+    transform: translateX(-50%);
+  }
+  75%, 95% {
+    transform: translateX(-75%);
   }
   100% {
     transform: translateX(0);
@@ -294,7 +317,6 @@ h1, h2, h3, h4, p, span, div {
   gap: 2rem;
   padding: 20px;
   background-color: #180e1c;
-  border: 1px solid #f8e18c;
 }
 
 .card {
@@ -368,10 +390,21 @@ h1, h2, h3, h4, p, span, div {
   width: 500px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
+  justify-content: space-between;
   padding: 0.25rem;
   padding-bottom: 0;
   gap: 0.25rem;
+}
+
+.formingres button {
+  display: flex;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+
+.category {
+  display: flex;
 }
 
 .formIngres {
@@ -411,7 +444,7 @@ h1, h2, h3, h4, p, span, div {
   gap: 1.25rem;
 }
 
-input[type=text], input[type=password], input[type=email], input[type=number] {
+input[type=text], input[type=password], input[type=email], input[type=number], input[type=checkbox] {
   width: 80%;
   padding: 0.5rem;
   border: 1px solid #f8f6e7;

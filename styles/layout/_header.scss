@@ -75,7 +75,8 @@
     cursor: pointer;
  }
 
- .form-H input[type="text"], input[type="password"], input[type="email"], input[type="number"] {
+ .form-H input[type="text"], input[type="password"], input[type="email"], input[type="number"]
+  {
     width: 80%;
     padding: 0.5rem;
     border: 1px solid $light-font-color;
@@ -92,6 +93,7 @@
  .bnt-nav{
     display: flex;
     gap: 1rem;
+    
  }
 
  .burger {
@@ -109,6 +111,22 @@
     margin: 4px 0;
     transition: 0.4s;
 }
+.btn{
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    &__primary {
+        &-solid {
+            background-color: $primary-color;
+            color: $primary-light-color;
+            &:hover{
+                background-color:$secondary-dark-color ;
+                color:$light-font-color ;
+            }
+        }
+     }
+}
+
 
 /* Diseño para móviles */
 @media (max-width: 768px) {
