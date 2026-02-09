@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -11,19 +11,20 @@
 <body>
   <header class="header__container">
     <nav class="navbar">
-      <div class="logo-mutual" style="display: flex; gap:0.5rspan;">
+      <div class="logo-mutual" style="display: flex; gap:0.5rem;">
         <img class="logo-img" src="./assets/logo.png" width="60" height="60">
         <h3>Jugueteria<br>Cosmica</h3>
       </div>
-      <button class="burger" id="burGer" aria-label="toggle-menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
+      <div class="btn-toggle-menu">
+        <button class="burger" id="burGer"  aria-label="toggle-menu">
+         <span class="bar"></span>
+         <span class="bar"></span>
+         <span class="bar"></span>
+        </button>
       </div>
       <div class="burger-container" id="burgerContainer">
         <ul class="ul-navbar" id="ulnavBar">
-          <li><a class="A-nav" href="index.html">Home</a></li>
+          <li><a class="A-nav" href="/index.html">Home</a></li>
           <li><a class="A-nav" href="./styles/pages/alta.html">Altas</a>
           <li><a class="A-nav" href="./styles/pages/contactos.html">Contactos</a></li>
           <li><a class="A-nav" href="./styles/pages/nosotros.html">Nosotros</a>
@@ -31,7 +32,7 @@
         <form class="form-Header" action="/buscar" method="get">
           <input type="text" name="query" placeholder="Buscar...">
           <button class="btn-nav" type="submit">
-            <img src="./assets/lupa.png" width="30" height="30">
+            <img src="./assets/lupa.png" width="30px"; height="30px;">
           </button>
         </form>
         <div class="btn-nav">
@@ -41,12 +42,6 @@
           <button class="btn btn__secondary-solid">
             <a class="A-nav" href="/styles/pages/Asociarme.html" id="Registrarse" target="_blank">Registrarse</a>
           </button>
-          <button class="btn btn__secondary-solid" id="shopCart">
-            <a class="A-nav" href="/styles/pages/paylist.html" id="shoppCart" target="_blank">
-              <img src="/assets/shopping_cart.png" width="30px">
-            </a>
-          </button>
-
         </div>
       </div>
     </nav>
@@ -223,14 +218,15 @@
           <br>
           ☎️ Llamanos:+ 549221-453-9775
           <br>
-          📧 spanail: lamutuallibertad@hotmail.com
+          📧 Email: contacto@cosmica.com
         </p>
       </div>
       <div class="section-links">
         <h4><span>Links sociales</span></h4>
         <div>
           <a href="#" target="_blank" class="twitter-logo">
-            <img src="./assets/icons8-twitter-50.png">
+            <img src="assets/icons8-twitter-50.png" 
+          alt="Twitter logo - white bird icon on blue background" >
           </a>
           <a href="#" target="_blank" class="facebook-logo">
             <img src="./assets/icons8-facebook-50.png">
